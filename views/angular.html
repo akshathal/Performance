@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div ng-controller="PeopleCtrl">
+    <p>    Click <a ng-click="loadPeople()">here</a> to load data.</p>
+<table>
+    <tr>
+       <th> MT_RECIPEXML_NEW_ID
+<th>STEP_Number</th>
+<th>STEP_DETAILS</th>	
+<th>FRONTEND</th>
+<th>BACKEND</th>
+<th>AUDIO_ALERT</th>
+<th>BATTERY</th>
+<th>BLUETOOTH</th>	
+<th>CAMERA</th>
+<th>CHARGING</th>
+<th>DISPLAY_KEYBORED</th>
+<th>MEMORY_CARD</th>
+<th>POWER_ON_OFF</th>
+<th>SIM_CARD</th>
+<th>WIFI</th>
+<th>NO_COMPLAINT</th>
+</tr>
+    <tr ng-repeat="person in people">
+        <td>{{person.MT_RECIPEXML_NEW_ID}}</td>
+        <td>{{person.STEP_Number}}</td>
+        <td>{{person.STEP_DETAILS}}</td>
+    </tr>
+</table>
+</div>
+</div>
+
+</body>
+</html>
